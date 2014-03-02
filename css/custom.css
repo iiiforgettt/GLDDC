@@ -1,0 +1,137 @@
+/*google fonts
+
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+
+body{
+	background-image: URL('../img/lightnoise.png');
+	font-family: 'Lato' sans-serif;
+}
+
+.centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.verticalspace{
+	margin-top: 75px;
+}
+
+.verticalspacemd{
+	margin-top: 50px;
+}
+
+.verticalspacesm{
+	margin-top: 25px;
+}
+
+.horizontalspace{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.transparent{
+	background: rgba(0,0,0,0);
+	border: 0px ;
+}
+
+.blackbg{
+	background: #000;
+}
+
+.blacktext{
+	color: #000;
+}
+
+
+.panel{
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .25);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, .25);
+}
+
+.writing-panel{
+	height: 800px;
+}
+
+.bar{
+	background-color: white;
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0, .5);
+			box-shadow: 0 0 10px rgba(0,0,0, .5);
+	height: 400px;
+	width: 100%;
+}
+
+.navbar .nav > li > a {
+    color:  #000;
+    font-size: 1.5em;
+}
+
+.navbar .nav > li {
+	margin-left: 30px;
+}
+
+.navbar .nav > li > a:hover,
+.navbar .nav > li > a:focus {
+  	text-decoration: none;
+	color: #d02989;
+	
+}
+
+
+.boa{
+
+	background-image: URL('../img/boa.png');
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
+}
+
+.swiz{
+
+	background-image: URL('../img/swizzleboards.png');
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
+}
+
+.vipercobra{
+
+	background-image: URL('../img/vipercobra.png');
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
+}
+
+.socialden{
+
+	background-image: URL('../img/socialden.png');
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
+}
+
+.nomad{
+
+	background-image: URL('../img/nomad.png');
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
+}
