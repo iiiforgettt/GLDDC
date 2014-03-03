@@ -5,10 +5,40 @@ font-family: 'Roboto', sans-serif;
 
 */
 
+/*global settings*/
 
 body{
 	background-image: URL('../img/lightnoise.png');
 	font-family: 'Lato' sans-serif;
+}
+
+/*font related*/
+
+.blacktext{
+	color: #000;
+}
+
+.welcome{
+	font-size: 72px;
+}
+
+p{
+	margin: 0 15px;
+}
+
+.glyph:{
+	font-size: 72px;
+}
+
+/*special coloring*/
+
+.blackbg{
+	background: #000;
+}
+
+/*Size, Shape and Positioning*/
+.navbar-nav{
+	line-height: 82px;
 }
 
 .centered{
@@ -16,16 +46,28 @@ body{
     margin: 0 auto;
 }
 
-.verticalspace{
+.realtall{
 	margin-top: 75px;
 }
 
-.verticalspacemd{
+.tall{
 	margin-top: 50px;
 }
 
-.verticalspacesm{
+.tallish{
 	margin-top: 25px;
+}
+
+.reallong{
+	margin-bottom: 75px;
+}
+
+.long{
+	margin-bottom: 50px;
+}
+
+.longish{
+	margin-bottom: 25px;
 }
 
 .horizontalspace{
@@ -37,15 +79,6 @@ body{
 	background: rgba(0,0,0,0);
 	border: 0px ;
 }
-
-.blackbg{
-	background: #000;
-}
-
-.blacktext{
-	color: #000;
-}
-
 
 .panel{
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .25);
@@ -60,7 +93,6 @@ body{
 	background-color: white;
 	-webkit-box-shadow: 0 0 10px rgba(0,0,0, .5);
 			box-shadow: 0 0 10px rgba(0,0,0, .5);
-	height: 400px;
 	width: 100%;
 }
 
@@ -134,4 +166,8 @@ body{
 	-o-background-size:cover;
 	background-size:cover;
 	background-position:center;
+}
+
+.designtile{
+	
 }
