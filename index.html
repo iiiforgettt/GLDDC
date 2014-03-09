@@ -13,6 +13,35 @@
     <!-- Custom CSS Stuff -->
     <link href="css/custom.css" rel="stylesheet">
 
+<!--load up the G maps goodness-->
+
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDChzUyPRogFKt_fgj3C4dIxt067DrJCPs&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(40.75607, -73.99083),
+          disableDefaultUI: true,
+          scrollwheel: false,
+          zoom: 6
+
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+        
+        var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Hello World!'
+  });
+      }
+      google.maps.event.addDomListener(window, 'resize', initialize);
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+
+    </script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -58,15 +87,14 @@
 		</div> <!--that's it for the header-->
 	</div><!--and we're ending the first container now-->
 
-		<div class="row tallish">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bar tall long">
+			<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 bar realtall long text-center">
 				<h1 class="realtall text-center welcome">Hi there.</h1>
 				<h2 class="realtall text-center reallong">My name is <br><strong>George L. Dickson</strong></h2>
 			</div>
-		</div>
+
 	<div class="container">
-		<div class="row realtall">
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 long">
+		<div class="row tall">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 reallong">
 				<div class="row">
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 						<span class="glyphicon glyphicon-globe" style="font-size: 70px; color: #51a0d2;"></span>
@@ -76,7 +104,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 long">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 reallong">
 				<div class="row">
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 						<span class="glyphicon glyphicon-pencil" style="font-size: 70px; color: #51a0d2;"></span>
@@ -87,6 +115,23 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class"row realtall">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="mapholder">
+						<div class="mapbody mapstyle">
+							<div id="map-canvas"></div>
+						</div>
+					</div>
+			</div>
+	</div>
+	<div class="container">
+		<div class="row realtall reallong">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				l;dafjs;
+			</div>
+		</div>
+	</div>
 
     <!-- Load up that jQuery, buddy! -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

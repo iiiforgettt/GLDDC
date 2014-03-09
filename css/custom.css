@@ -171,3 +171,24 @@ p{
 .designtile{
 	
 }
+
+/*badass stuff pulling from APIs*/
+
+.mapholder{
+	height: 600px;
+}
+
+.mapbody{
+	height:100%;
+	margin: 0;
+	padding: 0;
+	border-radius: 5px;
+}
+
+#map-canvas { 
+	height: 100%; 
+}
+.mapstyle{
+  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .25);
+          box-shadow: 0 1px 8px rgba(0, 0, 0, .25);
+}
