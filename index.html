@@ -20,20 +20,21 @@
     </script>
     <script type="text/javascript">
       function initialize() {
+      	var myLatlng = new google.maps.LatLng(40.75607, -73.99083);
         var mapOptions = {
-          center: new google.maps.LatLng(40.75607, -73.99083),
+          center: myLatlng,
           disableDefaultUI: true,
           scrollwheel: false,
           zoom: 6
 
-        };
+        }
         var map = new google.maps.Map(document.getElementById("map-canvas"),
             mapOptions);
-        
+
         var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      title: 'Hello World!'
+	      position: myLatlng,
+	      map: map,
+	      title: 'Hello World!'
   });
       }
       google.maps.event.addDomListener(window, 'resize', initialize);
@@ -89,35 +90,34 @@
 
 			<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 bar realtall long text-center">
 				<h1 class="realtall text-center welcome">Hi there.</h1>
-				<h2 class="realtall text-center reallong">My name is <br><strong>George L. Dickson</strong></h2>
+				<h2 class="realtall text-center reallong">My name is <br><strong>George L. Dickson</strong></h2>		
+<hr>
+				<div class="row tall" align="center">
+			<div class="col-lg-2 col-lg-push-2 col-md-2 col-md-push-2 col-sm-12 col-xs-12 longish">
+				<img src="img/pen.png" class="img-responsive"/>
+				<h3>I Write</h3>
 			</div>
-
-	<div class="container">
-		<div class="row tall">
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 reallong">
-				<div class="row">
-					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-						<span class="glyphicon glyphicon-globe" style="font-size: 70px; color: #51a0d2;"></span>
-					</div>
-					<div class="col-lg-9 col-md-9 col-sm-9 col-xs-8">
-						<h3>I build turn-key web experiences</h3>
-					</div>
-				</div>
+			<div class="col-lg-2 col-lg-push-2 col-md-2 col-md-push-2 col-sm-12 col-xs-12 longish">
+				<img src="img/note.png" class="img-responsive"/>
+				<h3>I Play</h3>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 reallong">
-				<div class="row">
-					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-						<span class="glyphicon glyphicon-pencil" style="font-size: 70px; color: #51a0d2;"></span>
-					</div>
-					<div class="col-lg-9 col-md-9 col-sm-9 col-xs-8">
-						<h3>I write and speak words and music</h3>
-					</div>
-				</div>
+			<div class="col-lg-2 col-lg-push-2 col-md-2 col-md-push-2 col-sm-12 col-xs-12 longish">
+				<img src="img/graph.png" class="img-responsive"/>
+				<h3>I Crunch</h3>
+			</div>
+			<div class="col-lg-2 col-lg-push-2 col-md-2 col-md-push-2 col-sm-12 col-xs-12 longish">
+				<img src="img/code.png" class="img-responsive"/>
+				<h3>I Code</h3>
 			</div>
 		</div>
-	</div>
+
+			</div>
+
+
+
+
 	<div class"row realtall">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div class="col-lg-8 col-lg-push-2 col-md-8 col-md-push-2 col-sm-12 col-xs-12">
 					<div class="mapholder">
 						<div class="mapbody mapstyle">
 							<div id="map-canvas"></div>
