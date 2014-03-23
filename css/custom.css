@@ -8,14 +8,21 @@ font-family: 'Roboto', sans-serif;
 /*global settings*/
 
 body{
-	background-image: URL('../img/lightnoise.png');
 	font-family: 'Lato' sans-serif;
 }
 
 /*font related*/
 
+.question{
+	margin-top: 40px;
+}
+
 .blacktext{
 	color: #000;
+}
+
+.whitetext{
+	color: #FFF;
 }
 
 .welcome{
@@ -30,6 +37,11 @@ p{
 	font-size: 72px;
 }
 
+.bigtext{
+	font-size: 72px;
+	background-color: #2ecc71;
+}
+
 /*special coloring*/
 
 .blackbg{
@@ -37,15 +49,33 @@ p{
 }
 
 /*Size, Shape and Positioning*/
+
+
 .navbar-nav{
 	line-height: 82px;
+}
+
+.header{
+	position: fixed;
+	z-index: 99;
+	background-image: URL('../img/lightnoise.png');
+	width: 100%;
+	height: 17%;
+		-webkit-box-shadow: 0 0 10px rgba(0,0,0, .5);
+			box-shadow: 0 0 10px rgba(0,0,0, .5);
 }
 
 .centered{
     float: none;
     margin: 0 auto;
 }
+.spacer{
+	height: 150px;
+}
 
+.bigspacer{
+	height: 450px;
+}
 .realtall{
 	margin-top: 75px;
 }
@@ -75,6 +105,10 @@ p{
 	margin-right: 10px;
 }
 
+.pushedright{
+	margin-left: 100px;
+}
+
 .transparent{
 	background: rgba(0,0,0,0);
 	border: 0px ;
@@ -91,9 +125,15 @@ p{
 
 .bar{
 	background-color: white;
-	-webkit-box-shadow: 0 0 10px rgba(0,0,0, .5);
-			box-shadow: 0 0 10px rgba(0,0,0, .5);
+
 	width: 100%;
+}
+
+#greensection{
+	background-color: #2ecc71;
+	height: 750px;
+	width: 100%;
+	margin-top: -20px;
 }
 
 .navbar .nav > li > a {
@@ -172,10 +212,23 @@ p{
 	
 }
 
+.copytile{
+	padding: 20px;
+}
+
+.translucenttile{
+
+background-color: #000;
+    background-color: rgba(208, 41, 137, .4);
+    	-webkit-box-shadow: 0 0 10px rgba(0,0,0, .5);
+			box-shadow: 0 0 10px rgba(0,0,0, .5);
+}
+
 /*badass stuff pulling from APIs*/
 
 .mapholder{
-	height: 600px;
+	height: 770px;
+	position: relative;
 }
 
 .mapbody{
@@ -183,6 +236,7 @@ p{
 	margin: 0;
 	padding: 0;
 	border-radius: 5px;
+	
 }
 
 #map-canvas { 
@@ -191,4 +245,26 @@ p{
 .mapstyle{
   -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .25);
           box-shadow: 0 1px 8px rgba(0, 0, 0, .25);
+}
+
+.mapoverlay{
+	z-index: 99;
+	position: absolute;
+	background-color: white;
+	height: 50px;
+	width:;
+}
+
+/* al;sdkdfj */
+
+.graphseparator{
+	background-image: URL('../img/graphseparator.png');
+	height: 600px;
+	margin-top: -270px;
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
 }
