@@ -1,20 +1,82 @@
-/*google fonts
 
-font-family: 'Lato', sans-serif;
-font-family: 'Roboto', sans-serif;
 
-*/
 
-/*global settings*/
+
+
+/* GLOBAL SETTINGS */
+
+
 
 body{
 	font-family: 'Lato' sans-serif;
 }
 
-/*font related*/
+p{
+	margin: 0 15px;
+}
 
-.question{
-	margin-top: 40px;
+.lato{font-family: 'Lato', sans-serif;}
+
+.roboto{font-family: 'Roboto', sans-serif;}
+
+.marker{
+	font-family: 'Permanent Marker', cursive;
+}
+.sunrise{
+	font-family: 'Waiting for the Sunrise', cursive;
+}
+
+.rocksalt{
+	font-family: 'Rock Salt', cursive;
+}
+
+.amatic{
+	font-family: 'Amatic SC', cursive;
+	font-size: 28px;
+}
+
+.opensans{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.roboto{
+	font-family: 'Roboto', sans-serif;
+}
+
+.syncopate{font-family: 'Syncopate', sans-serif;}
+
+.josans{font-family: 'Josefin Sans', sans-serif;}
+
+.joslab{font-family: 'Josefin Slab', serif;}
+
+.calli{font-family: 'Calligraffitti', cursive;}
+
+.cinzel{font-family: 'Cinzel', serif;}
+
+.orbitron{font-family: 'Orbitron', sans-serif;}
+
+.carme{font-family: 'Carme', sans-serif;}
+
+
+
+/* FONT RELATED */
+
+@media screen and (max-width: 768px) {
+    h3 {
+        font-size:20px;
+    }
+}
+ 
+@media screen and (max-width: 568px) {
+    h3 {
+        font-size:0.8em;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    h2 {
+        font-size:1.1em;
+    }
 }
 
 .blacktext{
@@ -25,12 +87,15 @@ body{
 	color: #FFF;
 }
 
-.welcome{
-	font-size: 72px;
+.codeblue{
+	color: #002ffb;
+}
+.codered{
+	color: #c80000;
 }
 
-p{
-	margin: 0 15px;
+.welcome{
+	font-size: 72px;
 }
 
 .glyph:{
@@ -39,17 +104,22 @@ p{
 
 .bigtext{
 	font-size: 72px;
-	background-color: #2ecc71;
+
 }
 
-/*special coloring*/
+/* SPECIAL COLORING AND OPACITY */
 
 .blackbg{
 	background: #000;
 }
 
-/*Size, Shape and Positioning*/
+.transparent{
+	background: rgba(0,0,0,0);
+	border: 0px ;
+}
 
+
+/* SIZE, SHAPE, AND POSITIONING */
 
 .navbar-nav{
 	line-height: 82px;
@@ -60,7 +130,7 @@ p{
 	z-index: 99;
 	background-image: URL('../img/lightnoise.png');
 	width: 100%;
-	height: 17%;
+	height: 150px;
 		-webkit-box-shadow: 0 0 10px rgba(0,0,0, .5);
 			box-shadow: 0 0 10px rgba(0,0,0, .5);
 }
@@ -69,13 +139,27 @@ p{
     float: none;
     margin: 0 auto;
 }
-.spacer{
-	height: 150px;
-}
+
+/* VERTICAL SPACERS */
 
 .bigspacer{
 	height: 450px;
 }
+
+.biggishspacer{
+	height: 300px;
+}
+
+.spacer{
+	height: 150px;
+}
+
+.smallspacer{
+	height: 75px;
+}
+
+/* VERTICAL MARGINS */
+
 .realtall{
 	margin-top: 75px;
 }
@@ -105,14 +189,6 @@ p{
 	margin-right: 10px;
 }
 
-.pushedright{
-	margin-left: 100px;
-}
-
-.transparent{
-	background: rgba(0,0,0,0);
-	border: 0px ;
-}
 
 .panel{
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .25);
@@ -129,12 +205,7 @@ p{
 	width: 100%;
 }
 
-#greensection{
-	background-color: #2ecc71;
-	height: 750px;
-	width: 100%;
-	margin-top: -20px;
-}
+/* NAVBAR STYLING */
 
 .navbar .nav > li > a {
     color:  #000;
@@ -152,6 +223,22 @@ p{
 	
 }
 
+
+/* GENERAL TILE STYLES */
+
+.copytile{
+	padding: 20px;
+}
+
+#righttile{
+	margin-top: -740px;
+}
+
+#bottomtile{
+	margin-top: -400px;
+}
+
+/* WEB PROJECT TILES */
 
 .boa{
 
@@ -208,26 +295,60 @@ p{
 	background-position:center;
 }
 
-.designtile{
-	
+/* SEPARATOR AND BACKGROUND SECTION STYLES */
+
+.graphseparator{
+	background-image: URL('../img/graphseparator.png');
+	height: 620px;
+	margin-top: -200px;
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
 }
 
-.copytile{
-	padding: 20px;
+#crunch{
+	background-color: #2ecc71;
+	height: 700px;
+	width: 100%;
+	margin-top: -20px;
 }
 
-.translucenttile{
-
-background-color: #000;
-    background-color: rgba(208, 41, 137, .4);
-    	-webkit-box-shadow: 0 0 10px rgba(0,0,0, .5);
-			box-shadow: 0 0 10px rgba(0,0,0, .5);
+#write{
+	background-color: #00aad4;
+	height: 900px;
+	width: 100%;
+	margin-top: -20px;
 }
 
-/*badass stuff pulling from APIs*/
+#design{
+	background-color: #FFFFFF;
+	height: 900px;
+	width: 100%;
+	margin-top: -20px;
+}
+
+#code{
+	background-color: #000000;
+	height: 900px;
+	width: 100%;
+	margin-top: -20px;
+
+}
+
+#footer{
+	background-color: #374548;
+	height: 200px;
+	width: 100%;
+	margin-top: -20px;
+}
+
+/* BADASS API PULLAGE STUFF */
 
 .mapholder{
-	height: 770px;
+	height: 900px;
 	position: relative;
 }
 
@@ -239,6 +360,7 @@ background-color: #000;
 
 #map-canvas { 
 	height: 100%; 
+
 }
 .mapstyle{
   -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .25);
@@ -253,16 +375,19 @@ background-color: #000;
 	width:;
 }
 
-/* al;sdkdfj */
+/* EXTERNAL MAP ELEMENT STYLES */
 
-.graphseparator{
-	background-image: URL('../img/graphseparator.png');
-	height: 600px;
-	margin-top: -270px;
-	background-repeat:no-repeat;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	background-size:cover;
-	background-position:center;
+#leftarrow{
+	margin-left: -120px;
+	margin-top: 200px;
+	margin-bottom: -50px;
+}
+
+#downarrow{
+	margin-left: 42%;
+	margin-right: auto;
+	margin-top: -30px;
+	margin-bottom: -200px;
+	z-index: 90;
+	position: absolute;
 }

@@ -4,7 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon">
-    <title>Web design | George L. Dickson</title>
+    <link href='http://fonts.googleapis.com/css?family=Syncopate|Josefin+Sans|Josefin+Slab:400,700|Calligraffitti|Cinzel|Orbitron:400,900|Carme|Permanent+Marker|Waiting+for+the+Sunrise|Rock+Salt|Amatic+SC:400,700|Open+Sans+Condensed:300,300italic,700|Roboto:400,100,300,500,900,700' rel='stylesheet' type='text/css'>
+    <title>NYC Web Designer | George L. Dickson</title>
 
     <!-- Bootstrap's CSS Loads here THANKS GUYS!-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -45,6 +46,33 @@
 
     </script>
 
+<!--load up some Google Charts.  Thanks guys!-->
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Visitors', 'source'],
+          ['Legitimate Visitors',     11],
+          ['Spider Bots',      2],
+          ['Real Robots',  2],
+          ['The Government', 2],
+          ['Your Friends',    7]
+        ]);
+
+        var options = {
+          title: '',
+          pieHole: 0.3,
+          backgroundColor: '#2ecc71',
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -55,8 +83,8 @@
 
 
   <body>
-  	<div class="container header">
- 		<div class="row tallish">
+  	<div class="container-fluid header">
+ 		<div class="row tallish orbitron">
 		  <div class="col-lg-2  col-md-2 col-sm-2 col-xs-3">
 		  	<a href="http://georgeldickson.com"><img src="img/gldlogo.png"/></a>
 		  </div>
@@ -64,7 +92,7 @@
 			<nav class="navbar navbar-default transparent blacktext" role="navigation">
 			  <div class="container-fluid">
 			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle black" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			      <button type="button" class="navbar-toggle black" data-toggle="collapse" data-target="#collapsed">
 			        <span class="sr-only">Toggle navigation</span>
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
@@ -73,12 +101,11 @@
 			    </div>
 
 			    <!-- Collect the nav links, forms, and other content for toggling -->
-			    <div class="collapse navbar-collapse blacktext" id="bs-example-navbar-collapse-1"> 
+			    <div class="collapse navbar-collapse blacktext" id="collapsed"> 
 			      <ul class="nav navbar-nav">
-			        <li><a href="design.html">Web Projects</a></li>
+			        <li><a href="web.html">Web Projects</a></li>
 			        <li><a href="writing.html">Writing</a></li>
 			        <li><a href="music.html">Music</a></li>
-			        <li><a href="about.html">About</a></li>
 			      </ul>
 			     
 			    </div><!-- /.navbar-collapse -->
@@ -87,60 +114,118 @@
 		  </div>
 		</div> <!--that's it for the header-->
 	</div><!--and we're ending the first container now-->
-	<div class="container">
-	<div class="spacer">
-	</div>
-	<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 bar reallong text-center">
-		<h1 class="realtall text-center welcome">GEORGE L. DICKSON</h1>
-		<h4 class="reallong text-center">Web Design | Customer Acquisition | Copywriting</h4>
-	</div>			
-	<div class="bigspacer hidden-xs">
-	</div>
-		<div class="row realtall long" align="center">
+	<div class="container-fluid">
+
+		<div class="spacer"></div>
+
+		<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 bar reallong text-center">
+			<h1 class="realtall text-center welcome carme">GEORGE L. DICKSON</h1><br>
+			<h4 class="longish text-center orbitron">Web Design | Customer Acquisition | Copywriting</h4>
+		</div>	
+
+		<div class="bigspacer hidden-xs"></div>
+
+		<div class="row realtall long josans" align="center">
+
 			<div class="col-lg-2 col-lg-push-2 col-md-2 col-md-push-2 col-sm-6 col-xs-6 reallong">
 				<img src="img/pen.png" class="img-responsive"/>
 				<h3>I Write</h3>
 			</div>
+
 			<div class="col-lg-2 col-lg-push-2 col-md-2 col-md-push-2 col-sm-6 col-xs-6 reallong">
-				<img src="img/note.png" class="img-responsive"/>
-				<h3>I Play</h3>
+				<img src="img/table.png" class="img-responsive"/>
+				<h3>I Design</h3>
 			</div>
+
 			<div class="col-lg-2 col-lg-push-2 col-md-2 col-md-push-2 col-sm-6 col-xs-6 reallong">
 				<img src="img/graph.png" class="img-responsive"/>
 				<h3>I Crunch</h3>
 			</div>
+
 			<div class="col-lg-2 col-lg-push-2 col-md-2 col-md-push-2 col-sm-6 col-xs-6 reallong">
 				<img src="img/code.png" class="img-responsive"/>
 				<h3>I Code</h3>
 			</div>
-		</div>
-	</div>
-	<div class"row">
-		<div class="col-xs-12 visible-xs visible-sm">
-		<h3 class="panel copytile">I work with people all over the country, but if you want to sit down for some coffe or a brew, you'll find me here, in NYC.</h3>
-		</div>
-		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 tall">
+
+		</div><!--end intro-->
+
+		<div class="row">
 			<div class="mapholder">
 				<div class="mapbody mapstyle">
 					<div id="map-canvas"></div>
 				</div>
 			</div>
 		</div>
-		<div class="col-lg-4  col-md-4  col-sm-4  col-xs-4 realtall hidden-xs hidden-sm">
-		<h3 class="pushedright panel copytile realtall">I work with people all over the country, but if you want to sit down for some coffe or a brew and discuss your project, I live in NYC.</h3>
-		<img src="img/arrow.png" class="img-responsive" />
+
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-lg-push-7 col-md-push-8 hidden-sm hidden-xs" id="righttile">
+			<img src="img/arrow.png" id="leftarrow" />
+				<h3 class="panel copytile">I work with people all over the country, but if you want to sit down for some coffe or a brew and discuss your project, I live in NYC.</h3>	
+			</div>
+			<div class="visible-xs visible-sm col-sm-8 col-sm-offset-2 col-xs-12" id="bottomtile"><h3 class="panel copytile">I work with people all over the country, but if you want to sit down for some coffe or a brew and discuss your project, I live in NYC.</h3></div>
 		</div>
-		<div class="col-lg-4  col-md-4  col-sm-4  col-xs-4  hidden-xs hidden-sm hidden-md">
-		<h3 class="pushedright panel copytile realtall">I have experience in all phases of measurement, design, and testing. Let's talk about your goals:</h3>
+
+		<div class="row">
+			<div id="write">
+				<div class="spacer"></div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h1 class="whitetext bigtext">I love to write.</h1>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-10 col-xs-12">
+					<h2 class="whitetext">Whether I'm composing copy, working on a short story, or keeping up with a friend, I am at home with language.</h2>
+					<h2 class="whitetext">I write comfortably in many genres, and have published work as a copywriter, blogger, poet, and short story author.</h2>
+					<h2 class="whitetext">If you need carefully composed text for your next project, contact me.</h2>
+				</div>
+				<div class="col-lg-8 col-md-8 col-sm-6 col-xs-6 text-right hidden-xs hidden-sm"><img src="img/penlg.png" class="img-responsive"/></div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right visible-xs visible-sm"><img src="img/penlg.png" class="img-responsive"/></div>
+			</div>
 		</div>
-	</div>
-	<div class="clearfix"></div>
-	<div class="graphseparator"><div class="spacer"></div></div>
-	<div id="greensection">
-		<div class="spacer"></div>
-		<h2 class="bigtext whitetext">What moves the meter?</h2>
-		<h3>It's different for each company, but I can help you find out what moves yours.</h3>
-	</div>
+
+		<div class="row">
+			<div id="design">
+			<div class="spacer"></div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+				<h1 class="bigtext">What's the Web Without Design?</h1>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"><img src="img/desklg.png" alt="drafting table" class="img-responsive"></div>
+				<div class="biggishspacer"></div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 tall"><h2>I believe that design always matters, and work hard to create beautiful, yet functional web exepriences.</h2></div>
+			</div>
+		</div>
+
+
+		<div class="smallspacer"></div>
+
+		<div class="row">
+			<div class="graphseparator"><div class="smallspacer"></div></div>
+			<div id="crunch">
+				<div class="smallspacer"></div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<h1 class="bigtext whitetext">I Track What Moves the Meters</h1>
+					<h2 class="whitetext realtall">It's different for each company, but with experience in every stage of design, measurement, and testing, I can help you find out what drives the most qualified traffic for your company.</h2>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<!--<div id="donutchart" style="width: 60%;"></div>-->
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div id="code">
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h1 class="long bigtext"><span class="codeblue">&lt;h1 class = <span class="codered"> "awesome" </span>&gt;</span> I also speak the language of the internets <span class="codeblue">&lt;/h1&gt;</span></h1>
+				<h2><span class="codeblue">&lt;p&gt;</span>So if staring red-eyed and frustrated into a computer screen isn't your thing, maybe I can do it for you.<span class="codeblue">&lt;/p&gt;</span>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+			</div>
+		</div>
+
+		<div class="row">
+		<div id="footer" class="realtall"><div class="smallspacer"></div><h2 class="text-center whitetext">If you have a project, I have some skills. Feel free to <a href="mailto:gld@georgeldickson.com">contact me</a> to discuss it.</h2></div>
+		</div>
+
     <!-- Load up that jQuery, buddy! -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Now load up Bootstrap's JS for goodness and stuff -->
