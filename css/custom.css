@@ -107,7 +107,7 @@ h3{
 
 @media screen and (max-width: 568px) {
     h3 {
-        font-size:1em;
+        font-size:2em;
     }
 }
 
@@ -126,7 +126,7 @@ h3{
 
 @media screen and (max-width: 568px) {
     .h3 {
-        font-size:1em;
+        font-size:2em;
     }
 }
 
@@ -168,9 +168,8 @@ h3{
 	margin-top: 20px;
 }
 
-.glyph:{
-	font-size: 72px;
-}
+
+
 
 .bigtext{
 	font-size: 4em;
@@ -332,7 +331,12 @@ h3{
 	margin-top: -400px;
 }
 
-/* WEB PROJECT TILES */
+#workhard{
+	margin-top: 75px;
+	margin-bottom: 50px;
+}
+
+/* HEADER STYLES */
 
 #title { 
   background: url('../img/NY.jpg') no-repeat center center fixed; 
@@ -345,6 +349,20 @@ h3{
 }
 
 
+#gld{
+	margin-top: 50px;
+
+}
+
+#logo{
+	margin-top: 50px;
+}
+
+#scroll{
+	margin-top: 50px;
+}
+
+/* WEB PROJECT TILES */
 .boa{
 
 	background-image: URL('../img/boa.png');
