@@ -349,7 +349,7 @@ h3{
 
 /* HEADER STYLES */
 
-#title { 
+#titlesection { 
   background: url('../img/NY.jpg') no-repeat center center fixed; 
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -403,7 +403,7 @@ h3{
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-  height: 900px;
+
 }
 
 #design{
