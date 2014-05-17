@@ -36,11 +36,9 @@
 		  <img src="img/gldlogobig.png" />
 		</div>
 		<div id="gld" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 blacktext">
-		  <span class="welcome carme">GEORGE L. DICKSON</span>
+		  <span id="welcome">GEORGE L. DICKSON</span>
 		</div>
 
-  
-			
 		<div id="scroll" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		  <img src="img/arrowd.png"/>
 		</div>
@@ -92,6 +90,7 @@
       center: myLatlng,
       disableDefaultUI: true,
       scrollwheel: false,
+      draggable: false,
       zoom: 5,
       styles: [{featureType:'all',stylers:[{visibility:'off'}]},{featureType:'water',stylers:[{visibility:'on'},{lightness:-100}]}]
 
@@ -125,7 +124,7 @@
 <!--Stuff about writing-->
 
 	  <div class="row" id="write">
-		<h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 whitetext carme text-center longish realtall">I live to write.</h2>
+		<h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 whitetext carme text-center longish realtall">I can write.</h2>
 		<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12 col-xs-12 whitetext carme reallong" style="bottom: 10px">
 		  <p>I am equally at home composing ad copy, fiction, blog articles, short stories, social posts, and poems.</p><br>
 		  <p>I understand the important differences between writing disciplines, and the rhetoric that drives their success.</p><br>
@@ -181,7 +180,7 @@
 <!--Analytics Section-->
 
 	  <div class="row">
-		<div class="graphseparator"></div>
+		<div id="graphseparator"></div>
 		<div id="crunch" class="whitetext">						
 		  <h2 class="reallong col-lg-12 col-md-12 col-sm-12 col-xs-12 tall">What Moves the Meter?</h2>			
 		  <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
@@ -189,7 +188,7 @@
 			<div id="donutchart"></div>
 		  </div>
 		  <div class="col-lg-6 col-lg-offset-1 col-md-6 col-sm-12 col-xs-12">					
-			<p>We can work together to find out what actually makes your traffic tick. It's not always a simple answer, but my experience in Search Engine Optimization (SEO), Search Engine Marketing (SEM) Conversion Rate Optimization (CRO), A/B testing, and analytics software, I can help you discover what moves yours.</p>
+			<p>We can work together to find out what actually makes your traffic tick. It's not always a simple answer, but with my experience in Search Engine Optimization (SEO), Search Engine Marketing (SEM) Conversion Rate Optimization (CRO), A/B testing, and analytics software, I can help you discover what moves yours.</p>
 		  </div>
 
 		</div>			
@@ -202,8 +201,8 @@
 		<div id="code">
 		  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bgpatch carme">
 			<div class="smallspacer"></div>
-			<h2><span class="codeblue">&lt;h1 class = <span class = " codered "> "coolclass"</span>&gt; </span> I can also speak internet <span class="codeblue">&lt;/h1&gt;</span></h2>
-			<p><span class="codeblue">&lt;p&gt;</span>So if staring red-eyed and frustrated into a computer screen for hours on end isn't your thing, I can do it for you.<span class="codeblue">&lt;/p&gt;</span></p>
+			<h2><span class="codeblue">&lt;h1 class = <span class="codered">"coolclass"</span>&gt; </span> I also speak internet <span class="codeblue">&lt;/h1&gt;</span></h2>
+			<p><span class="codeblue">&lt;p&gt;</span>If staring red-eyed and frustrated into a computer screen for hours on end isn't your thing, I can do it for you.<span class="codeblue">&lt;/p&gt;</span></p>
 		    <div class="smallspacer"></div>
 		  </div>
 		</div>
@@ -213,10 +212,14 @@
 
 	  <div class="row" id="footer">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 tall">
-		  <p class="text-center whitetext longish">If you have a project, I have some skills. Feel free to <a href="mailto:gld@georgeldickson.com">contact me</a> to discuss it.</p>
+		  <p class="text-center whitetext longish">If you have a project, I have some skills. <a href="mailto:gld@georgeldickson.com">Contact me</a> when you're ready to discuss it.</p>
 		  <div class="row long">
-		    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right"><button class="btn btn-default">Acknowledgements</button></div>
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="mailto:gld@gldickson.com"><button class="btn btn-default">Send Me an Email</button></a></div>
+		    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
+		      <button class="btn btn-default">Acknowledgements</button>
+		    </div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+			  <a href="mailto:gld@georgeldickson.com"><button class="btn btn-default">Send Me an Email</button></a>
+			</div>
 		  </div>
 		</div>
 	  </div>

@@ -1,54 +1,11 @@
 
-
-
-
-
 /* GLOBAL SETTINGS */
-
-
 
 .lato{font-family: 'Lato', sans-serif;}
 
-.roboto{font-family: 'Roboto', sans-serif;}
-
-.marker{
-	font-family: 'Permanent Marker', cursive;
-}
-.sunrise{
-	font-family: 'Waiting for the Sunrise', cursive;
-}
-
-.rocksalt{
-	font-family: 'Rock Salt', cursive;
-}
-
-.amatic{
-	font-family: 'Amatic SC', cursive;
-	font-size: 28px;
-}
-
-.opensans{
-	font-family: 'Open Sans Condensed', sans-serif;
-}
-
-.roboto{
-	font-family: 'Roboto', sans-serif;
-}
-
-.syncopate{font-family: 'Syncopate', sans-serif;}
-
-.josans{font-family: 'Josefin Sans', sans-serif;}
-
-.joslab{font-family: 'Josefin Slab', serif;}
-
-.calli{font-family: 'Calligraffitti', cursive;}
-
 .cinzel{font-family: 'Cinzel', serif;}
 
-.orbitron{font-family: 'Orbitron', sans-serif;}
-
 .carme{font-family: 'Carme', sans-serif;}
-
 
 
 /* FONT RELATED */
@@ -93,6 +50,7 @@ h3{
 	font-size: 2.5em;
 }
 
+/* FONT-BASED MEDIA QUERIES */
 
 @media screen and (max-width: 568px) {
     h1 {
@@ -140,8 +98,14 @@ h3{
     }
 }
 
+#welcome{
+	font-size: 4em;
+	font-family: 'Carme', sans-serif;
+	line-height: 140%;
+	margin-top: 20px;
+}
 
-
+/*TEXT COLORING*/
 
 .blacktext{
 	color: #000;
@@ -162,14 +126,9 @@ h3{
 .codeblue{
 	color: #002ffb;
 }
+
 .codered{
 	color: #c80000;
-}
-
-.welcome{
-	font-size: 4em;
-	line-height: 140%;
-	margin-top: 20px;
 }
 
 .btn-default{
@@ -177,13 +136,7 @@ h3{
 	color: white;
 }
 
-
-.bigtext{
-	font-size: 4em;
-
-}
-
-/* SPECIAL COLORING AND OPACITY */
+/* DIV COLORING AND OPACITY */
 
 .blackbg{
 	background: #000;
@@ -208,22 +161,8 @@ h3{
 	background: rgba(255,255,255,.9);
 }
 
+/* DIV SIZE, SHAPE, AND POSITIONING */
 
-/* SIZE, SHAPE, AND POSITIONING */
-
-.navbar-nav{
-	line-height: 82px;
-}
-
-.header{
-	position: fixed;
-	z-index: 99;
-	background-image: URL('../img/lightnoise.png');
-	width: 100%;
-	height: 150px;
-		-webkit-box-shadow: 0 0 10px rgba(0,0,0, .5);
-			box-shadow: 0 0 10px rgba(0,0,0, .5);
-}
 .centered{
     float:none;
     display:inline-block;
@@ -293,42 +232,12 @@ h3{
 	margin-right: 10px;
 }
 
+/* GENERAL TILE STYLES */
 
 .panel{
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .25);
           box-shadow: 0 1px 5px rgba(0, 0, 0, .25);
 }
-
-.writing-panel{
-	height: 800px;
-}
-
-.bar{
-	background-color: white;
-
-	width: 100%;
-}
-
-/* NAVBAR STYLING */
-
-.navbar .nav > li > a {
-    color:  #000;
-    font-size: 1.5em;
-}
-
-.navbar .nav > li {
-	margin-left: 30px;
-}
-
-.navbar .nav > li > a:hover,
-.navbar .nav > li > a:focus {
-  	text-decoration: none;
-	color: #d02989;
-	
-}
-
-
-/* GENERAL TILE STYLES */
 
 .copytile{
 	padding: 20px;
@@ -359,10 +268,8 @@ h3{
   background-position: center;
 }
 
-
 #gld{
 	margin-top: 50px;
-
 }
 
 #logo{
@@ -373,10 +280,9 @@ h3{
 	margin-top: 50px;
 }
 
-
 /* SEPARATOR AND BACKGROUND SECTION STYLES */
 
-.graphseparator{
+#graphseparator{
 	background-image: URL('../img/graphseparator2.png');
 	height: 620px;
 	margin-top: -200px;
@@ -430,6 +336,25 @@ h3{
 	margin-top: -20px;
 }
 
+
+/* EXTERNAL MAP ELEMENT STYLES */
+
+#leftarrow{
+	margin-left: -120px;
+	margin-top: 150px;
+	margin-bottom: -50px;
+}
+
+#downarrow{
+	margin-left: 42%;
+	margin-right: auto;
+	margin-top: -30px;
+	margin-bottom: -200px;
+	z-index: 90;
+	position: absolute;
+}
+
+
 /* BADASS API PULLAGE STUFF */
 
 .mapholder{
@@ -458,23 +383,6 @@ h3{
 	background-color: white;
 	height: 50px;
 	width:;
-}
-
-/* EXTERNAL MAP ELEMENT STYLES */
-
-#leftarrow{
-	margin-left: -120px;
-	margin-top: 150px;
-	margin-bottom: -50px;
-}
-
-#downarrow{
-	margin-left: 42%;
-	margin-right: auto;
-	margin-top: -30px;
-	margin-bottom: -200px;
-	z-index: 90;
-	position: absolute;
 }
 
 /*pace*/
@@ -512,65 +420,4 @@ h3{
   line-height: 1;
   text-align: right;
   color: rgba(0, 0, 0, 0.19999999999999996);
-}
-
-
-
-
-
-
-/* WEB PROJECT TILES */
-.boa{
-
-	background-image: URL('../img/boa.png');
-	background-repeat:no-repeat;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	background-size:cover;
-	background-position:center;
-}
-
-.swiz{
-
-	background-image: URL('../img/swizzleboards.png');
-	background-repeat:no-repeat;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	background-size:cover;
-	background-position:center;
-}
-
-.vipercobra{
-
-	background-image: URL('../img/vipercobra.png');
-	background-repeat:no-repeat;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	background-size:cover;
-	background-position:center;
-}
-
-.socialden{
-
-	background-image: URL('../img/socialden.png');
-	background-repeat:no-repeat;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	background-size:cover;
-	background-position:center;
-}
-
-.nomad{
-
-	background-image: URL('../img/nomad.png');
-	background-repeat:no-repeat;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	background-size:cover;
-	background-position:center;
 }
