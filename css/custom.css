@@ -296,8 +296,7 @@ h3{
 
 #crunch{
 	background-color: #00aad4;
-	height: 700px;
-	width: 100%;
+	color: #ffffff;
 	margin-top: -30px;
 }
 
@@ -309,7 +308,6 @@ h3{
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-
 }
 
 #design{
@@ -341,8 +339,8 @@ h3{
 
 #leftarrow{
 	margin-left: -120px;
-	margin-top: 150px;
-	margin-bottom: -50px;
+	margin-top: 160px;
+	margin-bottom: -20px;
 }
 
 #downarrow{
