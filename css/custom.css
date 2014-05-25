@@ -1,11 +1,7 @@
 
 /* GLOBAL SETTINGS */
 
-.lato{font-family: 'Lato', sans-serif;}
 
-.cinzel{font-family: 'Cinzel', serif;}
-
-.carme{font-family: 'Carme', sans-serif;}
 
 
 /* FONT RELATED */
@@ -16,7 +12,7 @@ a:hover {
 }
 
 body{
-	font-family: 'Lato' sans-serif;
+
 	line-height: 140%;
 }
 
@@ -24,6 +20,7 @@ p{
 	margin: 0 15px;
 	font-size: 2em;
 	line-height: 140%;
+	font-family: 'Droid Serif', serif;
 }
 
 h1{
@@ -32,10 +29,12 @@ h1{
 
 h2{
 	font-size: 3.2em;
+	font-family: 'Droid Sans', sans-serif;
 }
 
 h3{
 	font-size: 2.5em;
+	font-family: 'Droid Sans', sans-serif;
 }
 
 .h1{
@@ -55,12 +54,14 @@ h3{
 @media screen and (max-width: 568px) {
     h1 {
         font-size:3em;
+        font-family: 'Droid Sans', sans-serif;
     }
 }
 
 @media screen and (max-width: 568px) {
     h2 {
         font-size:2.5em;
+        font-family: 'Droid Sans', sans-serif;
     }
 }
 
@@ -68,6 +69,7 @@ h3{
 @media screen and (max-width: 568px) {
     h3 {
         font-size:2em;
+        font-family: 'Droid Sans', sans-serif;
     }
 }
 
@@ -95,12 +97,13 @@ h3{
     p {
         font-size:1.5em;
         line-height: 140%;
+        font-family: 'Droid Serif', serif;
     }
 }
 
 #welcome{
 	font-size: 4em;
-	font-family: 'Carme', sans-serif;
+	font-family: 'Droid Sans', sans-serif;
 	line-height: 140%;
 	margin-top: 20px;
 }
